@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C1269F192444ED89001563A3 /* MyHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1269F182444ED89001563A3 /* MyHostingController.swift */; };
+		C1269F1D244505C6001563A3 /* LeBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1269F1C244505C6001563A3 /* LeBar.xib */; };
 		C12D24A824437788003F82B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D24A724437788003F82B2 /* AppDelegate.swift */; };
 		C12D24AA24437788003F82B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D24A924437788003F82B2 /* ContentView.swift */; };
 		C12D24AC24437789003F82B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12D24AB24437789003F82B2 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		C1269F182444ED89001563A3 /* MyHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHostingController.swift; sourceTree = "<group>"; };
+		C1269F1C244505C6001563A3 /* LeBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeBar.xib; sourceTree = "<group>"; };
 		C12D24A424437788003F82B2 /* myTouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12D24A724437788003F82B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C12D24A924437788003F82B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				C12D24BA244377E1003F82B2 /* Resources */,
 				C12D24A724437788003F82B2 /* AppDelegate.swift */,
 				C1269F182444ED89001563A3 /* MyHostingController.swift */,
+				C1269F1C244505C6001563A3 /* LeBar.xib */,
 				C12D24A924437788003F82B2 /* ContentView.swift */,
 				C12D24AB24437789003F82B2 /* Assets.xcassets */,
 				C12D24B024437789003F82B2 /* Main.storyboard */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12D24BC244377ED003F82B2 /* feeder.png in Resources */,
+				C1269F1D244505C6001563A3 /* LeBar.xib in Resources */,
 				C12D24B224437789003F82B2 /* Main.storyboard in Resources */,
 				C12D24AF24437789003F82B2 /* Preview Assets.xcassets in Resources */,
 				C12D24AC24437789003F82B2 /* Assets.xcassets in Resources */,

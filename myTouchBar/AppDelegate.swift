@@ -10,12 +10,13 @@ import Cocoa
 import SwiftUI
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSTouchBarDelegate {
     
     var window: NSWindow!
     var popover: NSPopover!
     var statusBarItem: NSStatusItem!
-    
+    var mainController: MyHostingController!
+
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
@@ -26,7 +27,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         popover.contentSize = NSSize(width: 400, height: 400)
         popover.behavior = .transient
-        popover.contentViewController = MyHostingController(rootView: AnyView(contentView))
+        self.mainController = MyHostingController(rootView: AnyView(contentView))
+        popover.contentViewController = mainController
+        NSApp.touchBar = mainController.touchBar
         self.popover = popover
         
         self.statusBarItem = NSStatusBar.system.statusItem(
