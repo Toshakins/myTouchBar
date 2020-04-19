@@ -38,7 +38,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTouchBarDelegate {
             button.image = NSImage(named: "Icon")
             button.action = #selector(togglePopover(_:))
         }
-        print("ololo")
+        
+        NSWorkspace.shared.notificationCenter.addObserver(self,
+            selector: #selector(writeToConsole(_:)),
+            name: NSWorkspace.didActivateApplicationNotification,
+            object: nil)
+
+    }
+    
+    @objc func writeToConsole(_ notification: NSNotification?) {
+        let application = notification?.userInfo?["NSWorkspaceApplicationKey"] as! NSRunningApplication
+        print("+++ \(application.localizedName ?? "None")")
     }
     
     @objc func togglePopover(_ sender: AnyObject?) {

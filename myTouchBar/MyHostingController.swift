@@ -23,11 +23,9 @@ class MyHostingController: NSHostingController<AnyView>, NSTouchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        print("trololo")
     }
     
     override func makeTouchBar() -> NSTouchBar? {
-        print("touchy touch")
         let touchBar = NSTouchBar()
         touchBar.delegate = self
         touchBar.customizationIdentifier =
